@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmedelbasha.coffeeshop.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/customer_name_user_input"
+            android:inputType="textCapWords"
+            android:hint="Name"
+            style="@style/EditTextStyle"/>
+
+        <TextView
+            android:text="Toppings:"
+            style="@style/HeaderTextStyle"/>
+
+        <CheckBox
+            android:layout_marginTop="16dp"
+            android:text="Whipped Cream"
+            android:id="@+id/add_whipped_cream_check_box"
+            style="@style/CheckBox"/>
+
+        <CheckBox
+            android:layout_marginTop="8dp"
+            android:text="Chocolate"
+            android:id="@+id/add_chocolate_check_box"
+            style="@style/CheckBox"/>
+
+        <TextView
+            android:text="Quantity:"
+            style="@style/HeaderTextStyle"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:text="-"
+                android:id="@+id/decrement_button"
+                style="@style/ArithmeticButtons"/>
+
+            <TextView
+                android:text="0"
+                android:id="@+id/quantity_text_view"
+                style="@style/QuantityTextView"/>
+
+            <Button
+                android:text="+"
+                android:id="@+id/increment_button"
+                style="@style/ArithmeticButtons"/>
+
+        </LinearLayout>
+
+        <Button
+            android:text="Order"
+            android:layout_marginTop="16dp"
+            android:id="@+id/order_button"
+            style="@style/StandardButton"/>
+
+
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
